@@ -1,0 +1,70 @@
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  height: 100vh;
+  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  /* display: flex; */
+  flex-wrap: nowrap;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.header-title {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #0d6efd;
+}
+
+.nav-link {
+  font-weight: 200;
+  transition: none;
+}
+
+.about-footer {
+  font-weight: 200;
+}
+
+.lable-room {
+  color: #0d6efd;
+  font-size: large;
+}
+
+.text-big-title {
+  color: #0d6efd;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.text-big-sub-title {
+  color: #0d6efd;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:hover,
+.nav-tabs .nav-link.active:active {
+  margin-bottom: -1px !important;
+  border-bottom: 2px black solid !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.meeting-tap {
+  color: #495057;
+}
+
+.meeting-tap:hover {
+  color: #495057;
+  border-top: 1px solid transparent !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+}
