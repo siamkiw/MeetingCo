@@ -68,3 +68,11 @@ main {
   border-left: 1px solid transparent !important;
   border-right: 1px solid transparent !important;
 }
+
+.box-color {
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #495057;
+}

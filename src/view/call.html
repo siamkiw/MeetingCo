@@ -145,41 +145,205 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="quickMeetingContainer" role="tabpanel"
                                 aria-labelledby="quick-meeting-tab">
-                                <div class="row mt-5">
+
+                                <!-- creaete room start -->
+                                <div id="createMeetingInner" class="row mt-5 d-flex">
                                     <div class="col-2">
 
                                     </div>
+
+
                                     <div class="col-10">
+                                        <!-- row start -->
                                         <div class="row w-75">
                                             <div class="d-flex">
                                                 <div class="w-25 text-end align-self-center">
                                                 </div>
-                                                <div class="w-50 text-left ms-2 lable-room">
+                                                <div class="w-75 text-left ms-2 lable-room">
                                                     This room ID is booked for your meeting.
                                                 </div>
                                             </div>
 
                                         </div>
+                                        <!-- row end -->
+
+                                        <!-- row start -->
                                         <div class="row w-75 mt-4">
                                             <div class="d-flex">
                                                 <div class="w-25 text-end align-self-center">
                                                     Room Name :
                                                 </div>
-                                                <div class="w-50 text-left ms-2"><input type="text" class="form-control"
+                                                <div class="w-75 text-left ms-2"><input type="text" class="form-control"
                                                         placeholder="Room Name"></div>
                                             </div>
                                         </div>
+                                        <!-- row end -->
+
+                                        <!-- row start -->
                                         <div class="row w-75 mt-2">
                                             <div class="d-flex">
                                                 <div class="w-25 text-end align-self-center">
                                                     ID :
                                                 </div>
-                                                <div class="w-50 text-left ms-2"><input type="text" class="form-control"
+                                                <div class="w-75 text-left ms-2"><input type="text" class="form-control"
                                                         placeholder="ID"></div>
+                                            </div>
+                                        </div>
+                                        <!-- row end -->
+
+                                        <!-- row start -->
+                                        <div class="row w-75 mt-5">
+                                            <div class="d-flex">
+                                                <div class="w-25 text-end align-self-center">
+                                                    Lobby :
+                                                </div>
+                                                <div class="w-75 text-left ms-2 d-flex align-items-center">
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <span class="text-black-50" style="width: 50px;">NONE</span>
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <span class="text-black-50" style="width: 50px;">YES</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row end -->
+
+                                        <!-- row start -->
+                                        <div class="row w-75 mt-3">
+                                            <div class="d-flex">
+                                                <div class="w-25 text-end align-self-center">
+                                                    Passcode :
+                                                </div>
+                                                <div class="w-75 text-left ms-2 d-flex align-items-center">
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <span class="text-black-50" style="width: 50px;">NONE</span>
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <div>
+                                                        <input type="text" class="form-control" style="width: 220px;"
+                                                            placeholder="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row end -->
+
+                                        <!-- row start -->
+                                        <div class="row w-75 mt-3">
+                                            <div class="d-flex">
+                                                <div class="w-25 text-end align-self-center">
+                                                    Time :
+                                                </div>
+                                                <div class="w-75 text-left ms-2 d-flex align-items-center">
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <span class="text-black-50" style="width: 50px;">NOW</span>
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <div>
+                                                        <select class="form-select" style="width: 110px;">
+                                                            <option selected>THU 27</option>
+                                                            <option value="1">THU 28</option>
+                                                            <option value="2">THU 29</option>
+                                                            <option value="3">THU 30</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <select class="form-select" style="width: 110px;">
+                                                            <option selected>AUGST</option>
+                                                            <option value="1">AUGST</option>
+                                                            <option value="2">AUGST</option>
+                                                            <option value="3">AUGST</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row end -->
+
+
+                                        <!-- row start -->
+                                        <div class="row w-75 mt-3">
+                                            <div class="d-flex">
+                                                <div class="w-25 text-end align-self-center">
+                                                    Time :
+                                                </div>
+                                                <div class="w-75 text-left ms-2 d-flex align-items-center">
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <span class="text-black-50" style="width: 50px;">NOW</span>
+                                                    <input class="form-check-input me-3 ms-3" type="checkbox" checked>
+                                                    <div>
+                                                        <select class="form-select" style="width: 110px;">
+                                                            <option selected>09 AM</option>
+                                                            <option value="1">10 AM</option>
+                                                            <option value="2">11 AM</option>
+                                                            <option value="3">12 AM</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <select class="form-select" style="width: 110px;">
+                                                            <option selected>: 05</option>
+                                                            <option value="1">: 10</option>
+                                                            <option value="2">: 15</option>
+                                                            <option value="3">: 20</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row end -->
+
+                                        <!-- row start -->
+                                        <div class="row w-75 mt-5">
+                                            <div class="d-flex">
+                                                <div class="w-25 text-end align-self-center">
+                                                </div>
+                                                <div class="w-75 text-left ms-2 d-flex align-items-center">
+                                                    <button id="createRoomButton" type="button"
+                                                        class="btn btn-primary w-25">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- row end -->
+
+                                    </div>
+
+                                </div>
+                                <!-- creaete room start -->
+
+                                <!-- prepare room start -->
+                                <!-- prepare room start -->
+                                <div id="prepareMeetingInner" class="row mt-5 d-none">
+                                    <div class="col-3 border-end">
+                                        <div class="box-color"></div>
+                                        <div class="mt-2" style="width: 90%; margin: auto">
+                                            <p>Friday_098</p>
+                                            <p>Meeting ID 210802098</p>
+                                            <p>For quick meeting</p>
+                                            <div class="d-flex justify-content-between">
+                                                <p>Start Now</p>
+                                                <p>Not limit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-9 pb-5">
+                                        <div class="container">
+                                            <p>Message</p>
+                                            <div class="border rounded p-4">
+                                                <p>Please join the meeting</p>
+                                                <p class="mb-5">Link : https:www.meetingco.com/qm/210802098Room</p>
+                                                <p>Room name : Friday_098</p>
+                                                <p>name : Friday_098Meeting</p>
+                                                <p class="mb-5">ID : 210802098</p>
+                                                <p>Passcode : None</p>
+                                                <p class="mb-5">Start : Not limit</p>
+                                                <p>By MeetingCo</p>
+
+
+
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- prepare room end -->
                             </div>
                             <div class="tab-pane fade" id="professionallyContainer" role="tabpanel"
                                 aria-labelledby="professionally-tab">professionallyContainer
