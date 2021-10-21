@@ -37,3 +37,40 @@ createRoomButton.addEventListener("click", () => {
     }
     isDisplayCreateMeetingRoom = !isDisplayCreateMeetingRoom
 })
+
+
+let emailContainer = document.querySelector('#email-container')
+let emailAddInput = document.querySelector('#email-add-Input')
+let emailButton = document.querySelector('#email-button')
+
+let boxCount = 3
+emailButton.addEventListener("click", () => {
+  boxCount++
+  emailContainer.innerHTML += `
+  <div id="box-${boxCount}"  class="d-flex justify-content-between align-items-center email-box mt-2">
+    <p onclick="changeColor('box-${boxCount}')" class="m-0">${emailAddInput.value}</p>
+    <div id="box-close-${boxCount}" onclick="closeEmail('box-${boxCount}')" class="close-x">X</div>
+  </div>`
+  emailAddInput.value = ""
+})
+
+function changeColor(id){
+  document.querySelector(`#${id}`).style.background = "#B2F7B2"
+}
+
+function closeEmail(id){
+  document.querySelector(`#${id}`).remove();
+}
+
+let startButton = document.querySelector('#start-button')
+let isStartNow = false
+
+startButton.addEventListener("click", () => {
+  if(!isStartNow){
+    startButton.innerHTML = "Go to Lobby"
+  }else {
+    console.log("else")
+    window.location.href = "/src/view/lobby.html";
+  }
+  isStartNow = true
+})

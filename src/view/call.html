@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <title>Document</title>
+    <title>MeetingCo</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand border-bottom">
             <div class="container-fluid">
-                <a href="/" class="
+                <a href="/src/view/call.html" class="
               d-flex
               align-items-center
               mb-3 mb-md-0
@@ -320,9 +320,14 @@
                                                 <p>Not limit</p>
                                             </div>
                                         </div>
+                                        <div class="mt-2 d-flex justify-content-center"
+                                            style="width: 90%; margin: auto">
+                                            <button id="start-button" type="button" class="btn btn-primary">
+                                                Start Now
+                                            </button>
+                                        </div>
                                     </div>
-
-                                    <div class="col-9 pb-5">
+                                    <div class="col-6 pb-5">
                                         <div class="container">
                                             <p>Message</p>
                                             <div class="border rounded p-4">
@@ -337,16 +342,67 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-3 pb-5">
+                                        <div class="container">
+                                            <p>Message</p>
+                                            <!-- email container start -->
+                                            <div id="email-container">
+                                                <div id="box-1"
+                                                    class="d-flex justify-content-between align-items-center email-box"
+                                                    onclick="changeColor('box-1')">
+                                                    <p class="m-0">wittaya.pi@outlook.com</p>
+                                                    <div id="box-close-1" onclick="closeEmail('box-1')" class="close-x">
+                                                    </div>
+                                                    X
+                                                </div>
+                                                <div id="box-2"
+                                                    class="d-flex justify-content-between align-items-center email-box mt-2">
+                                                    <p onclick="changeColor('box-2')" class="m-0">natnanakhon@gamil.com
+                                                    </p>
+                                                    <div id="box-close-2" onclick="closeEmail('box-2')" class="close-x">
+                                                        X</div>
+                                                </div>
+                                                <div id="box-3"
+                                                    class="d-flex justify-content-between align-items-center email-box mt-2">
+                                                    <p onclick="changeColor('box-3')" class="m-0">
+                                                        putipan_2020@hotmail.com
+                                                    </p>
+                                                    <div id="box-close-3" onclick="closeEmail('box-3')" class="close-x">
+                                                        X</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- email container end -->
+
+                                        <!-- add email container start -->
+                                        <div class="mt-2 container">
+                                            <div class="text-left"><input type="text" id="email-add-Input"
+                                                    class="form-control w-100" placeholder="+Add email"></div>
+                                        </div>
+                                        <!-- add email container end -->
+
+                                        <!-- send Invitation container start -->
+                                        <div class="mt-2 container">
+                                            <div class="d-flex justify-content-end">
+                                                <button id="email-button" type="button" class="btn btn-primary">
+                                                    Send Invaitation
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- send Invitation container end -->
+                                    </div>
                                 </div>
-                                <!-- prepare room end -->
                             </div>
-                            <div class="tab-pane fade" id="professionallyContainer" role="tabpanel"
-                                aria-labelledby="professionally-tab">professionallyContainer
-                            </div>
+                            <!-- prepare room end -->
+                        </div>
+                        <div class="tab-pane fade" id="professionallyContainer" role="tabpanel"
+                            aria-labelledby="professionally-tab">professionallyContainer
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 

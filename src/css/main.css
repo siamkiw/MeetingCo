@@ -76,3 +76,13 @@ main {
   margin: auto;
   background-color: #495057;
 }
+
+.email-box {
+  background-color: #ececec;
+  height: 40px;
+  padding: 10px;
+}
+
+.close-x {
+  cursor: pointer;
+}
