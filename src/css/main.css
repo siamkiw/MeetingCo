@@ -77,6 +77,13 @@ main {
   background-color: #495057;
 }
 
+.box-color-meting {
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  background-color: #929292;
+}
+
 .email-box {
   background-color: #ececec;
   height: 40px;
@@ -90,3 +97,12 @@ main {
 .user-card {
   width: 68px;
 }
+
+/* meeting icon start */
+.meeting-button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #5f5f5f;
+}
+/* meeting icon end */
