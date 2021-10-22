@@ -87,5 +87,6 @@ main {
   cursor: pointer;
 }
 
-.info-container {
+.user-card {
+  width: 68px;
 }
