@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- fontawsome ICON -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>MeetingCo</title>
+</head>
+
+<body>
+    <!-- top bar -->
+    <header>
+        <nav class="navbar navbar-expand border-bottom">
+            <div class="container-fluid">
+                <a href="/src/view/call.html" class="
+              d-flex
+              align-items-center
+              mb-3 mb-md-0
+              me-md-auto
+              text-dark text-decoration-none
+            ">
+
+                    <span class="header-title"><i class="fal fa-bars ms-3 me-2 text-dark"></i> MeetingCo</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ms-5" id="navbarsExample02">
+                    <form class="navbar-nav me-auto">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Search Meeting"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text text-center " id="basic-addon2"
+                                style="width: 100px; justify-content: center;">Join</span>
+                        </div>
+                    </form>
+                    <form>
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item me-3">
+                                <a href="#" class="nav-link text-dark">SIGN IN</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <button type="button" class="btn btn-outline-primary">
+                                    <i class="fas fa-user-circle me-2"></i> SIGINUP
+                                </button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- top bar -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- side bar -->
+                <div class="col-2 p-0">
+                    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 100%; height: 100vh">
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="#" id="createMeeting" class="nav-link active" aria-current="page">
+                                    <span class="me-2"></span>
+                                    + Create Metting
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-dark">
+                                    <i class="fal fa-video me-2"></i>
+                                    Public Live
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-dark">
+                                    <i class="fal fa-user me-2"></i>
+                                    Community
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-dark">
+                                    <i class="fal fa-flag-alt me-2"></i>
+                                    Enterorise
+                                </a>
+                            </li>
+                            <hr />
+                            <li>
+                                <a href="#" class="nav-link link-dark">
+                                    <i class="fal fa-graduation-cap me-2"></i>
+                                    My Course
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-dark">
+                                    <i class="fal fa-suitcase me-2"></i>
+                                    My Metting
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-dark">
+                                    <i class="fal fa-sticky-note me-2"></i>
+                                    My Agenda
+                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            <h5 class="about-footer text-center">About MeetingCo</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- side bar -->
+
+                <div class="col mt-3">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="d-flex">
+                                        <h5 class="mb-0">MEETING - CHECKING</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="w-100 h-100 px-0" style="background-color: #5F5F5F;">
+                                        <div class="w-100 h-50 d-flex">
+                                            <div class="box-color-meting-2 d-flex align-items-center flex-column w-50 "
+                                                style="height: auto;">
+                                                <i class="fas fa-user text-white my-5 py-3"
+                                                    style="font-size: 100px;"></i>
+                                            </div>
+                                            <div class="box-color-meting-2 d-flex align-items-center flex-column w-50 "
+                                                style="height: auto;">
+                                                <i class="fas fa-user text-white my-5 py-3"
+                                                    style="font-size: 100px;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="w-100 h-50 d-flex">
+                                            <div class="box-color-meting-2 d-flex align-items-center flex-column w-50 "
+                                                style="height: auto;">
+                                                <i class="fas fa-user text-white my-5 py-3"
+                                                    style="font-size: 100px;"></i>
+                                            </div>
+                                            <div class="box-color-meting-2 d-flex align-items-center flex-column w-50 "
+                                                style="height: auto;">
+                                                <i class="fas fa-user text-white my-5 py-3"
+                                                    style="font-size: 100px;"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #929292;">
+                                        <div class="container-fluid">
+                                            <div class="row w-100">
+                                                <div class="col-3 justify-content-start align-self-center">
+                                                    <div class="d-flex justify-content-start align-items-center">
+                                                        <i class="fal fa-th-large fs-2 text-white me-2"></i>
+                                                        <p class="text-white text-secondary m-0">ID 321-123-34</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-center align-items-center">
+
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-microphone fs-3 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-video fs-3 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fal fa-tv fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-pen-nib fs-3 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fal fa-closed-captioning fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-hand-paper fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="col-3 d-flex justify-content-end align-items-center pe-0">
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fad fa-circle fs-2 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" d-flex justify-content-center align-items-center pe-0">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-user fs-3 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-comment-alt fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class=" d-flex justify-content-center align-items-center mx-1">
+                                                        <div
+                                                            class="meeting-button d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-cog fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex justify-content-center align-items-center ms-1">
+                                                        <div
+                                                            class="meeting-button bg-danger d-flex justify-content-center align-items-center rounded-circle">
+                                                            <i class="fas fa-phone fs-4 text-white"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </nav>
+
+                                </div>
+
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <div class="d-flex justify-content-end">
+                                        <h5 class="mb-0 text-end">ID 321-123-334</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row mx-2 border h-100" style="background-color: #d3d3d3;">
+                                    <div class="d-flex  flex-column">
+                                        <h5 class="mt-3 text-center">Group chat / Participants</h5>
+
+                                        <div class="d-flex justify-content-center">
+                                            <div class="d-flex flex-column bg-white px-1" style="width: fit-content;">
+                                                <div class="d-flex align-self-center mt-2">
+                                                    <img class="w-100" src="../image/qr.png" alt="">
+                                                </div>
+                                                <div class="d-flex align-self-center mt-2 text-primary border-top">
+                                                    <p class="mb-2">[ See QR code Full page ]</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <link href="../css/main.css" rel="stylesheet" />
+    <script src="../js/joinMettingController.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
